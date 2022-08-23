@@ -1,17 +1,17 @@
 import random
 
-lower_case = '2222222233332222222222'
-upper_case = '3333333322223333333333'
+a = '2222222233332222222222'
+b = '3333333322223333333333'
 
 
-Use_for = lower_case + upper_case
-length_for_pass = 5
+Num_key = a + b
+length_for_key = 5
 
-password = ''.join(random.sample(Use_for, length_for_pass))
-print("Your password:",password)
+num = ''.join(random.sample(Num_key, length_for_key))
+print("Your numbers:",num)
 
 key = str(input("Key:"))
-if key == password:
+if key == num:
     print("Welcome!")
 else:
     print("SORRY...")
