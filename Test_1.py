@@ -12,7 +12,7 @@ key = str(input("Key:"))
 Yes = "Welcome!"
 No = "SORRY..."
 
-if key == num:
+if key == num_key:
     print(Yes)
 else:
     print(No)
