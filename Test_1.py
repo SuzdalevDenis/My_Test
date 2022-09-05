@@ -2,17 +2,21 @@ import random
 
 numbers = '1234567890123456789012345678901234567890'
 
-length_for_key = 5
+length_for_key = 6
 
 num_key = ''.join(random.sample(numbers, length_for_key))
 print("Your numbers:", num_key)
 
 key = str(input("Key:"))
 
-Yes = "Welcome!"
-No = "SORRY..."
+yes = "Welcome!"
+no = "SORRY..."
 
 if key == num_key:
-    print(Yes)
+    print(yes)
+    if yes:
+        print('Yes')
 else:
-    print(No)
+    print(no)
+    if no:
+        print('No')
