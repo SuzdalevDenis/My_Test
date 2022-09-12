@@ -2,7 +2,7 @@ import random
 
 #personal = str(input('First name Last name:'))
 id_personal = str(input('Your ID:'))
-personal_list_and_id = {'22003': 'Alex Wolfski', '34556': 'Maya Doorwelle', '22002': 'Rei Ayanami', 'u': '33445'}
+personal_list_and_id = {'22003AW_personal': 'Alex Wolfski', '34556MD_personal': 'Maya Doorwelle', '22002RA_admin': 'Rei Ayanami', 'u': '33445'}
 
 if id_personal in personal_list_and_id:
     print("Hello!")
