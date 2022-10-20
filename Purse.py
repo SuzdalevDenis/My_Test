@@ -19,15 +19,24 @@ class Purse:
         return howmany
 
     def from_purse_to_purse(self, howmany_purse):
+        if self.__money - howmany_purse < 0:
+            print('Не достаточно средств')
+            raise ValueError('Не достаточно средств')
         self.__money = self.__money - howmany_purse
         return howmany_purse
 
     def from_USD_to_EUR(self, howmany_USD):
+        if self.__money - howmany_USD < 0:
+            print('Не достаточно средств')
+            raise ValueError('Не достаточно средств')
         self.__money = self.__money - howmany_USD
         howmany_USD *= 1.026
         return howmany_USD
 
     def from_EUR_to_USD(self, howmany_EUR):
+        if self.__money - howmany_EUR < 0:
+            print('Не достаточно средств')
+            raise ValueError('Не достаточно средств')
         self.__money = self.__money - howmany_EUR
         howmany_EUR *= 0.9737
         return howmany_EUR
