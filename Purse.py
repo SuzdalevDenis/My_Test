@@ -30,7 +30,7 @@ class Purse:
             print('Не достаточно средств')
             raise ValueError('Не достаточно средств')
         self.__money = self.__money - howmany_USD
-        howmany_USD *= 1.026
+        howmany_USD *= 0.9425
         return howmany_USD
 
     def from_EUR_to_USD(self, howmany_EUR):
@@ -38,7 +38,7 @@ class Purse:
             print('Не достаточно средств')
             raise ValueError('Не достаточно средств')
         self.__money = self.__money - howmany_EUR
-        howmany_EUR *= 0.9737
+        howmany_EUR *= 1.061
         return howmany_EUR
 
     def info(self):

@@ -16,7 +16,7 @@ yes = "Welcome!"
 no = "SORRY..."
 
 seconds = time.time()
-local = time.ctime(seconds)
+localTime = time.ctime(seconds)
 
 
 def correct_key():
@@ -30,15 +30,22 @@ def correct_key():
             return'No'
 
 
+
+
 if id_personal in id_and_personal:
     print(f"Hello {id_and_personal[id_personal]}!")
     print("Your numbers:", num_key)
     key = str(input("Key:"))
     print(correct_key())
-    print(local)
+    print(localTime)
 else:
     print('Who are you? Get out!')
-    print(local)
+    print(localTime)
 
 
-time_list = list(local)
+time_list = list(localTime)
+
+
+def between_extremes(numbers):
+    return max(numbers) - min(numbers)
+
